@@ -50,6 +50,8 @@ class Vehical:
     def carry_cargo(self):        
         return f"the {self.get_name()} is carry_cargo"
 
+#FIRST SUB CLASS FROM VEHICAL
+
 class bus(Vehical):
     
     def __init__(self, brand : str, name : str, color : str, capacity :int, plat_number : int ):
@@ -57,12 +59,14 @@ class bus(Vehical):
 
     def drive(self)-> str:
             return f"the {self.get_name()}is driving!"
-
+    #OVERWRITE 
     def drift(self):
         return f"the {self.get_name()} is not drifting it is for transportation "
 
     def carry_cargo(self ):        
         return f"the {self.get_name()} is carry_cargo "
+
+# SECOND SUB CLASS FROM VEHICAL        
 
 class truck(Vehical):
     
@@ -72,6 +76,7 @@ class truck(Vehical):
     def drive(self)-> str:
             return f"the {self.get_name()} is driving! "
 
+#OVERWRITE            
     def drift(self):
         return f"the {self.get_name()} is not drifting "
 
@@ -79,13 +84,15 @@ class truck(Vehical):
         return f"the {self.get_name()} is carry_cargo "
 
 
-
+#CREATE OBJECT FROM VEHICAL CLASS
 vehicalOne = Vehical("TOYOTA" , "CAR123" , "RED" , 5 , 123400 )
 print("First Vehicall is :" , vehicalOne.get_name() , "AND COLOR IS " , vehicalOne.get_color() )
 print(vehicalOne.drive())
 print(vehicalOne.drift())
 print(vehicalOne.carry_cargo())
 print("____"* 10)
+
+#CREATE OBJECT FROM TRUCK SUB-CLASS
 
 truckOne = truck ("TRACKname - A" , "TRACK -A " , "BLACK" , 2 , 15477714200)
 print("First truck is :" , truckOne.get_name() , "AND COLOR IS " , truckOne.get_capacity() )
@@ -94,6 +101,7 @@ print(truckOne.drift())
 print(truckOne.carry_cargo())
 print("____"* 10)
 
+#CREATE OBJECT FROM BUS SUB-CLASS
 busOne = bus("BUSname " , "bus -A " , "yellow" , 30 , 14200)
 print("First bus is :" , busOne.get_name() , "AND COLOR IS " , busOne.get_capacity() )
 print(busOne.drive())
