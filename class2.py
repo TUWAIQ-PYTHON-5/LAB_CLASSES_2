@@ -66,7 +66,7 @@ class Bus (Vehicle) :
     def drive(self) -> str:
         return f"the {self.get_name()}is driving!"
 
-    # OVERWRITE
+   
     def drift(self):
         return f"the {self.get_name()} is not drifting it is for transportation! "
 
