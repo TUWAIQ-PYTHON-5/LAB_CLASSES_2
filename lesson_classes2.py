@@ -83,7 +83,9 @@ print("the best vehicle color for me is : " , vehicle_opject1.get_color())
 print("the best vehicle brand for me is : " , vehicle_opject2.get_brand())
 print(Bus1.drive())
 print(Bus1.comparing())
-print(Truck1.carry_cargo("Hi"))
+print(Truck1.carry_cargo())
+print(Truck1.comparing())
+
 
 
 
