@@ -45,6 +45,7 @@ class Bus(Vehicle):
 
     def carry_cargo(self):
         print(f"the {self.get_name()} is carrying cargo !!")
+
 class Truck(Vehicle):
     def drive(self):
         print(f"the {self.get_name()} is driving!")
@@ -58,5 +59,13 @@ class Truck(Vehicle):
 
 #vehicle_object=Vehicle("Rolls Royce","motor","black",7000,5984)
 bus_object= Bus("Rolls Royce","motor","black",7000,5984)
-#truk_object= Truck()
-print(bus_object.drive())
+truk_object= Truck("Renault Truck","flat truck","blue",7000,5984)
+bus_object.drive()
+bus_object.drift()
+bus_object.carry_cargo()
+print("\n")
+truk_object.drive()
+truk_object.drift()
+truk_object.carry_cargo()
+
+
