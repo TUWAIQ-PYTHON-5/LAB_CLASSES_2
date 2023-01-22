@@ -55,7 +55,6 @@ class Truck(Vehicle):
     
     def __init__(self, brand : str, name : str, color : str, capacity : int, plate_number : int):
         super().__init__(brand, name, color, capacity, plate_number)
-
     
     def drive(self):
         return f"the{self.get_name()} is driving!"
@@ -64,7 +63,9 @@ class Truck(Vehicle):
         return f"the {self.get_name()}is drifting!!"
     
     def carry_cargo(self):
-        return f"{self.carry_cargo()}is carrying cargo!!"
+        return f"{self.get_name()}is carrying cargo!!"
+
+
 
 class Bus(Vehicle):
     def __init__(self, brand: str, name: str, color: str, capacity: int, plate_number: int):
@@ -77,7 +78,7 @@ class Bus(Vehicle):
         return f"the {self.get_name()}is drifting!!"
     
     def carry_cargo(self):
-        return f"{self.carry_cargo()}is carrying cargo!!"
+        return f" {self.get_name()}is carrying cargo!!"
 
 vehical_1 = Vehicle ("Mercedes-Benz" , "Truck" , "RED" , 2 , 5231744 )
 print(vehical_1.drive())
@@ -85,7 +86,13 @@ print(vehical_1.drift())
 print(vehical_1.carry_cargo())
 
 
-bus_1 = Bus("toyota " , "Hays " , "white" , 15 , 201445)
+bus_1 = Bus(" toyota " , " Hays " , " white " , 15 , 201445)
+print(bus_1.drive())
+print(bus_1.drift())
+print(bus_1.carry_cargo())
+
+
+truck = Truck(" truck_a " , " name_truck " , " white " , 5 , 85236997)
 print(bus_1.drive())
 print(bus_1.drift())
 print(bus_1.carry_cargo())
