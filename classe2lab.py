@@ -1,12 +1,12 @@
-#to define a class
+
 class Vehicle :
-    #class Attribute / Property
+    
     
 
     def __init__(self, brand  : str, name : int, color : str,capacity , plate_number):
-        #initialize object / instance attributes
+        
         self.__brand = brand
-        self.__name = name #attribute is private / encapsulation
+        self.__name = name 
         self.__color = color
         self.__capacity = capacity
         self.__plate_number= plate_number
@@ -42,37 +42,35 @@ class Vehicle :
         return self.__plate_number
     
 
-    def drive():
+    def drive(self):
         return f"The {self.get_name()} is driving ."
-    def drift():
+    def drift(self):
         return f"The  {self.get_name()} is drifting ." 
-    def carry_cargo():
+    def carry_cargo(self):
         return f"The {self.get_name()} is carrying cargo ." 
 
 
 class Bus(Vehicle):
-    def __init__(self, brand: str, name: int, color: str, capacity, plate_number, driver_name ):
+    def __init__(self, brand: str, name: int, color: str, capacity, plate_number ):
         super().__init__(brand, name, color, capacity, plate_number)
        
-
-    def drive():
+ 
+    def drive(self):
         return f"The {self.get_name()} is driving ."
-    def drift():
+    def drift(self):
         return f"The  {self.get_name()} is drifting ." 
-    def carry_cargo():
+    def carry_cargo(self):
         return f"The {self.get_name()} is carrying cargo ." 
 
 
 class Truck (Vehicle):
-    def __init__(self, brand: str, name: int, color: str, capacity, plate_number,size ):
+    def __init__(self, brand: str, name: int, color: str, capacity, plate_number):
         super().__init__(brand, name, color, capacity, plate_number)
-    
-
-    def drive():
+    def drive(self):
         return f"The {self.get_name()} is driving ."
-    def drift():
+    def drift(self):
         return f"The  {self.get_name()} is drifting ." 
-    def carry_cargo():
+    def carry_cargo(self):
         return f"The {self.get_name()} is carrying cargo ." 
 
 
