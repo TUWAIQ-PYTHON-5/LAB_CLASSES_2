@@ -9,43 +9,43 @@ class Vehicle:
         self.__plate_number = plate_number
 
     def drift(self):
-        return f"The truck {self.get_name()} is not drifting! "
+        return f"The vehicle {self.__name} is not drifting! "
 
     def drive(self):
-        return f"The truck {self.get_name()} is not driving! "
+        return f"The vehicle {self.__name} is not driving! "
 
     def carry_cargo(self):
-        return f"The truck {self.get_name()} is carrying cargo !!"
+        return f"The vehicle {self.__name} is carrying cargo !!"
 
 
-        def set_name(self, name):
+    def set_name(self, name):
             self.__name = name
 
-        def get_name(self):
+    def get_name(self):
             return self.__name
 
-        def set_brand(self, brand):
+    def set_brand(self, brand):
             self.__brand = brand
 
-        def get_brand(self):
+    def get_brand(self):
             return self.__brand
 
-        def set_color(self, color):
+    def set_color(self, color):
             self.__color = color
 
-        def get_color(self):
+    def get_color(self):
             return self.__color
 
-        def set_capacity(self, capacity):
+    def set_capacity(self, capacity):
             self.__capacity = capacity
 
-        def get_capacity(self):
+    def get_capacity(self):
             return self.__capacity
 
-        def set_plate_number(self, plate_number):
+    def set_plate_number(self, plate_number):
             self.__Plate_number = plate_number
 
-        def get_plate_number(self):
+    def get_plate_number(self):
             return self.__plate_number
 
 
@@ -57,13 +57,13 @@ class Bus(Vehicle):
 
 
         def drift(self):
-            return f"The truck {self.get_name()} is not drifting! "
+            return f"The Bus {self.get_name()} is not drifting! "
 
         def drive(self):
-            return f"The truck {self.get_name()} is not driving! "
+            return f"The Bus {self.get_name()} is not driving! "
 
         def carry_cargo(self):
-            return f"The truck {self.get_name()} is carrying cargo !!"
+            return f"The Bus {self.get_name()} is carrying cargo !!"
 
 class Truck(Vehicle):
 
@@ -81,9 +81,10 @@ class Truck(Vehicle):
             return f"The truck {self.get_name()} is carrying cargo !!"
 
 Vehical1 = Vehicle("Lexus", "GX", "black", 6, 8890)
+
 print("Vehicle is :", Vehical1.get_brand(), ",", " name is : ", Vehical1.get_name(), ",", " color is ",
           Vehical1.get_color(), ",",
-          "capacity and the palte number  : ", Vehical1.get_capacity(), Vehical1.get_plate_number())
+          "capacity and the palte number : ", Vehical1.get_capacity(), Vehical1.get_plate_number())
 print(Vehical1.drive())
 print(Vehical1.drift())
 print(Vehical1.carry_cargo())
