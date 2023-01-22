@@ -80,6 +80,15 @@ class Truck(Vehicle):
         def carry_cargo(self):
             return f"The truck {self.get_name()} is carrying cargo !!"
 
+Vehical1 = Vehicle("Lexus", "GX", "black", 6, 8890)
+print("Vehicle is :", Vehical1.get_brand(), ",", " name is : ", Vehical1.get_name(), ",", " color is ",
+          Vehical1.get_color(), ",",
+          "capacity and the palte number  : ", Vehical1.get_capacity(), Vehical1.get_plate_number())
+print(Vehical1.drive())
+print(Vehical1.drift())
+print(Vehical1.carry_cargo())
+print("\n")
+
 
 Bus1 = Bus("Mercedes", "g-class", "White", 9, 2000)
 
