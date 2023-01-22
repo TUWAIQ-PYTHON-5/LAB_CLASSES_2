@@ -5,41 +5,41 @@ class Vehicle :
 
     def __init__(self, brand  : str, name : int, color : str,capacity , plate_number):
         #initialize object / instance attributes
-        self.brand = brand
-        self.name = name #attribute is private / encapsulation
-        self.color = color
-        self.capacity = capacity
-        self.plate_number= plate_number
+        self.__brand = brand
+        self.__name = name #attribute is private / encapsulation
+        self.__color = color
+        self.__capacity = capacity
+        self.__plate_number= plate_number
     
     def set_brand(self, brand):
-        self.brand = brand
+        self.__brand = brand
     
     def get_brand(self):
         return self.__brand
 
     def set_name(self, name):
-        self.name = name
+        self.__name = name
     
     def get_name(self):
-        return self.name
+        return self.__name
     
     def set_color(self, color):
-        self.color = color 
+        self.__color = color 
     
     def get_color(self):
-        return self.color
+        return self.__color
 
     def set_capacity(self, capacity):
-        self.capacity = capacity
+        self.__capacity = capacity
     
     def get_capacity(self):
-        return self.capacity
+        return self.__capacity
 
     def set_plate_number(self, plate_number):
-        self.plate_number = plate_number
+        self.__plate_number = plate_number
     
     def get_plate_number(self):
-        return self.plate_number
+        return self.__plate_number
     
 
     def drive():
@@ -53,7 +53,7 @@ class Vehicle :
 class Bus(Vehicle):
     def __init__(self, brand: str, name: int, color: str, capacity, plate_number, driver_name ):
         super().__init__(brand, name, color, capacity, plate_number)
-        self.driver_name = driver_name
+       
 
     def drive():
         return f"The {self.get_name()} is driving ."
@@ -66,7 +66,7 @@ class Bus(Vehicle):
 class Truck (Vehicle):
     def __init__(self, brand: str, name: int, color: str, capacity, plate_number,size ):
         super().__init__(brand, name, color, capacity, plate_number)
-        self.size = size 
+    
 
     def drive():
         return f"The {self.get_name()} is driving ."
@@ -84,7 +84,7 @@ print(vehile1.carry_cargo())
 print("*"* 10)
 
 
-Bus1 = Bus("BUSname " , " Mercedes" , "yellow" , 19 , 57676 , 150)
+Bus1 = Bus("BUSname " , " Mercedes" , "yellow" , 19 , 57676 )
 print("First bus is :" , Bus1.get_name() , "from the brand : " , Bus1.get_brand() )
 print(Bus1.drive())
 print(Bus1.drift())
